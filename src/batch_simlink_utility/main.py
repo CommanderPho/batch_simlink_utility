@@ -10,8 +10,8 @@ from PyQt5.QtWidgets import (
 )
 from PyQt5.QtCore import Qt, QDir, QThread, pyqtSignal, QTimer
 from PyQt5.QtGui import QIcon, QFont
-from .symlink_actionplan import ActionPlan, ActionItem, ActionStatus
-from .auth import AuthManager
+from batch_simlink_utility.symlink_actionplan import ActionPlan, ActionItem, ActionStatus
+from batch_simlink_utility.auth import AuthManager
 
 class FileBrowserWidget(QWidget):
     """Enhanced file browser with better navigation and selection."""
