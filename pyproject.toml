@@ -1,7 +1,7 @@
 [project]
 name = "batch-simlink-utility"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.0.0"
+description = "A cross-platform GUI utility for creating batch symbolic links to save disk space"
 readme = "README.md"
 authors = [
     { name = "Pho Hale", email = "PhoHale@gmail.com" }
@@ -9,7 +9,11 @@ authors = [
 requires-python = ">=3.11.2"
 dependencies = [
     "ipykernel>=6.30.1",
+    "pyqt5-qt5==5.15.2",
 ]
+
+[project.scripts]
+batch-symlink = "batch_simlink_utility:main"
 
 [build-system]
 requires = ["hatchling"]
